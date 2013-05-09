@@ -34,7 +34,7 @@ public class BateriaPruebas extends TestCase {
 			Gestor gestor = new Gestor();
 			
 			// Añadimos null en el almacén
-			boolean esperado = gestor.añadirProducto(null);
+			gestor.añadirProducto(null);
 			
 			fail("Debería haberse lanzado una excepción. Producto null");
 		} catch (Exception e) {
